@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>GITEX Global 2026 — A Digital Planet</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div id="stage"></div>
+
+<div class="hud tl"><div class="row"><span class="dot"></span><span><b>GITEX</b> · GLOBAL 2026</span></div><div class="ln" style="margin-top:8px">CH.01 — DIGITAL PLANET</div></div>
+<div class="hud tr"><div>LAT <b class="ticker" id="lat">00.000</b> · LON <b class="ticker" id="lon">00.000</b></div><div class="ln" style="margin-top:8px">DUBAI · UAE · 25.20° N</div></div>
+<div class="hud bl"><div>SCROLL <b class="ticker" id="prog">000%</b></div><div class="ln" style="margin-top:8px">↓ EXPLORE</div></div>
+<div class="hud br"><div>FRAME <b class="ticker" id="fr">0000</b></div><div class="ln" style="margin-top:8px">© ANTHROPIC ATELIER</div></div>
+
+<div class="rail" id="rail">
+  <i></i><i></i><i></i><i></i>
+</div>
+
+<!-- scroll-pinned story panels (last is the hero) -->
+<div class="story" data-beat="0"><div class="panel center">
+  <div class="lede">A digital planet awakens.</div>
+  <div class="sub">scroll to enter</div>
+</div></div>
+
+<div class="story" data-beat="1"><div class="panel center">
+  <div class="lede"><span class="line">Where the world's boldest minds</span><span class="line">converge in one orbit.</span></div>
+</div></div>
+
+<div class="story" data-beat="2"><div class="panel center">
+  <div class="lede">All roads lead to Dubai.</div>
+  <div class="sub">8 — 11 December 2026 · Expo City Dubai</div>
+</div></div>
+
+<div class="story" data-beat="3"><div class="panel hero">
+  <img class="logo" src="assets/images/gitex-logo-hd.png" alt="GITEX Global" />
+</div></div>
+
+<div id="scroll-driver"></div>
+
+<section class="gitex-first-fold" id="gitex-first-fold" aria-label="GITEX Global first fold">
+  <video class="gitex-hero-video" id="gitex-hero-video" autoplay loop muted playsinline></video>
+  <nav class="gitex-nav" aria-label="GITEX primary">
+    <img src="assets/images/gitex-landing-logo.png" alt="GITEX Global" />
+    <div class="gitex-nav-links" aria-hidden="true">
+      <span>Exhibit</span>
+      <span>Visit</span>
+      <span>Agenda</span>
+      <span>Startups</span>
+    </div>
+    <div class="gitex-actions">
+      <a class="gitex-btn" href="https://www.gitex.com/" target="_blank" rel="noreferrer">Get your pass</a>
+      <a class="gitex-btn" href="https://www.gitex.com/" target="_blank" rel="noreferrer">Book a stand</a>
+    </div>
+  </nav>
+  <div class="gitex-fold-inner">
+    <div class="gitex-kicker">8 - 11 December 2026 · Expo City Dubai</div>
+    <h1>
+      <span class="gitex-gradient-line">The future always begins</span>
+      <span class="gitex-human-line">
+        <span class="gitex-muted">with</span>
+        <span>GITEX</span>
+      </span>
+    </h1>
+    <p class="gitex-summary"><span class="line">The world’s largest tech and startup event returns to Dubai,</span><span class="line">uniting global founders, enterprises, investors, and innovators in one city.</span></p>
+    <div class="gitex-countdown" aria-label="Countdown to GITEX Global 2026">
+      <div class="gitex-countdown-item"><span class="gitex-countdown-value" id="count-days">000</span><span class="gitex-countdown-label">Days</span></div>
+      <div class="gitex-countdown-item"><span class="gitex-countdown-value" id="count-hours">00</span><span class="gitex-countdown-label">Hours</span></div>
+      <div class="gitex-countdown-item"><span class="gitex-countdown-value" id="count-minutes">00</span><span class="gitex-countdown-label">Minutes</span></div>
+      <div class="gitex-countdown-item"><span class="gitex-countdown-value" id="count-seconds">00</span><span class="gitex-countdown-label">Seconds</span></div>
+    </div>
+    <div class="gitex-meta">
+      <span>Co-located with <strong>AI Everything</strong></span>
+      <span><strong>Expand North Star</strong></span>
+    </div>
+    <div class="gitex-actions">
+      <a class="gitex-btn primary" href="https://www.gitex.com/" target="_blank" rel="noreferrer"><span>Explore GITEX</span></a>
+    </div>
+  </div>
+</section>
+
+<div id="intro-screen" aria-hidden="true"><p class="intro-sentence">A digital world awakens</p></div>
+
+<div class="vignette"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="entry-whiteout" id="entry-whiteout" aria-hidden="true"></div>
+<div class="loading" id="loading">building digital planet…</div>
+<div class="codepen-aura" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="cobe-globe-wrap" aria-hidden="true"><canvas id="cobe-globe"></canvas></div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
